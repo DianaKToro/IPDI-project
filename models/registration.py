@@ -10,7 +10,7 @@ class Registration:
         mixed_img = ants.image_read(config.RESOURCES['imgs'].format(image))
         #fixed_img = ants.from_numpy(flair_img)
         #mixed_img = ants.from_numpy(image)
-        registered_img = ants.registration(fixed=fixed_img, moving=mixed_img, type_of_transform = 'SyN' )
+        registered_img = ants.registration(fixed=fixed_img, moving=mixed_img, type_of_transform = 'Rigid' )
         register = registered_img['warpedmovout']
     
         call_methods_seg.mri_image = register
