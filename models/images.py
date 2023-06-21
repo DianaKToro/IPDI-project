@@ -161,7 +161,7 @@ class Images:
             self.clear_frame(frame)
             for (key, value) in data_metrics.items():
                 
-                info_axis_x = "La compaaración de las segmentaciones "+ key + " son: " + str(value)             
+                info_axis_x = "La comparación de las segmentaciones "+ key + " son: " + str(value)             
                 Label(frame, text=info_axis_x, font=style.FONT, bg=style.BG, fg=style.FG).pack(side=TOP, anchor=NW) 
             for (key, value) in data_volumen.items():
                 
